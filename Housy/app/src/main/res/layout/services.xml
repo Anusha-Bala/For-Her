@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <ImageButton
+        android:layout_width="270px"
+        android:layout_height="270px"
+        android:id="@+id/Bservicesearch"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="69dp"
+        android:src="@drawable/search"
+        android:onClick="onsearchclick" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Our Services"
+        android:textSize="80px"
+        android:textStyle="bold"
+        android:textColor="#fffdfff7"
+        android:id="@+id/textView10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="270px"
+        android:layout_height="270px"
+        android:id="@+id/Bservicepost"
+        android:src="@drawable/post2"
+        android:layout_below="@+id/textView11"
+        android:layout_alignLeft="@+id/Bservicesearch"
+        android:layout_alignStart="@+id/Bservicesearch"
+        android:layout_marginTop="54dp"
+        android:onClick="onpostclick" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="SEARCH"
+        android:id="@+id/textView11"
+        android:textSize="40px"
+        android:textStyle="bold"
+        android:layout_below="@+id/Bservicesearch"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="POST"
+        android:id="@+id/textView12"
+        android:textSize="40px"
+        android:textStyle="bold"
+        android:layout_below="@+id/Bservicepost"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffffff" />
+
+</RelativeLayout>

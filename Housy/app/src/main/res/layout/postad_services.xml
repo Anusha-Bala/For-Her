@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/s2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="For Sale &amp; For Rent"
+        android:textSize="60px"
+        android:textStyle="bold"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="270px"
+        android:layout_height="270px"
+        android:id="@+id/Bpostsale"
+        android:background="@drawable/sale"
+        android:onClick="onpostsaleClick"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/Bpostrent"
+        android:layout_alignStart="@+id/Bpostrent" />
+
+    <ImageButton
+        android:layout_width="270px"
+        android:layout_height="270px"
+        android:id="@+id/Bpostrent"
+        android:background="@drawable/rent"
+        android:onClick="onpostrentClick"
+        android:layout_below="@+id/textView13"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="For Sale"
+        android:id="@+id/textView13"
+        android:textSize="40px"
+        android:textStyle="bold"
+        android:textColor="#fa0200ff"
+        android:layout_below="@+id/Bpostsale"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="For Rent"
+        android:id="@+id/textView14"
+        android:textSize="40px"
+        android:textStyle="bold"
+        android:textColor="#ff1208ff"
+        android:layout_below="@+id/Bpostrent"
+        android:layout_alignLeft="@+id/textView13"
+        android:layout_alignStart="@+id/textView13" />
+
+</RelativeLayout>

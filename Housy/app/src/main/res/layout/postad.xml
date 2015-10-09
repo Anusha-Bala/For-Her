@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="POST UR AD HERE !!!"
+        android:id="@+id/textView17"
+        android:textSize="70px"
+        android:textStyle="bold"
+        android:textColor="#fffdfff7"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="NAME"
+        android:id="@+id/textView18"
+        android:textSize="50px"
+        android:textStyle="bold"
+        android:layout_marginTop="38dp"
+        android:textColor="#ffffffff"
+        android:layout_below="@+id/textView17"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/pname"
+        android:layout_below="@+id/textView18"
+        android:textSize="40px"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="AMOUNT"
+        android:id="@+id/textView19"
+        android:textSize="50px"
+        android:textStyle="bold"
+        android:textColor="#ffffffff"
+        android:layout_below="@+id/pname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/pamount"
+        android:layout_below="@+id/textView19"
+        android:textSize="40px"
+        android:textStyle="bold"
+        android:textColor="#ffffffff"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView20"
+        android:text="ADDRESS"
+        android:layout_below="@+id/pamount"
+        android:textSize="50px"
+        android:textStyle="bold"
+        android:textColor="#ffffffff"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/paddress"
+        android:layout_below="@+id/textView20"
+        android:textSize="40px"
+        android:textStyle="bold"
+        android:textColor="#ffffffff"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="CITY"
+        android:id="@+id/textView22"
+        android:textSize="50px"
+        android:textStyle="bold"
+        android:textColor="#ffffffff"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/paddress" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pcity"
+        android:layout_below="@+id/textView22"
+        android:textSize="40px"
+        android:textStyle="bold"
+        android:textColor="#ffffffff"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/paddress"
+        android:layout_alignEnd="@+id/paddress" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="CONTACT NO."
+        android:id="@+id/textView23"
+        android:layout_below="@+id/pcity"
+        android:textSize="50px"
+        android:textStyle="bold"
+        android:textColor="#ffffffff"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/pcontact"
+        android:layout_below="@+id/textView23"
+        android:textSize="40px"
+        android:textStyle="bold"
+        android:textColor="#ffffffff"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="POST"
+        android:id="@+id/Bpostad"
+        android:textColor="#fffdfff7"
+        android:background="#ff2300ff"
+        android:textSize="50px"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="OnPostadClick" />
+</RelativeLayout>
